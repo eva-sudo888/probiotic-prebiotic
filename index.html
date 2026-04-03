@@ -5,787 +5,258 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Пробиотик + Пребиотик Longrich — Состав и схема приёма</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #FAFAF7;
-    --text: #2D2A26;
-    --text-soft: #5C5750;
-    --accent: #3E7C5F;
-    --accent-light: #E8F3ED;
-    --accent-warm: #D4A054;
-    --card-bg: #FFFFFF;
-    --card-border: #E8E5DF;
-    --highlight: #FFF8EC;
-    --probiotic: #5B8EC9;
-    --prebiotic: #5A9E6F;
-    --shadow: 0 2px 20px rgba(0,0,0,0.06);
-    --radius: 16px;
+    --bg: #F5F3EE;
+    --text: #1A1A1A;
+    --text-mid: #3D3D3D;
+    --text-soft: #6B6560;
+    --pro: #2E6DB4;
+    --pro-bg: #EDF3FA;
+    --pre: #2D8B55;
+    --pre-bg: #EBF5EF;
+    --warm: #E8A33D;
+    --warm-bg: #FFF6E6;
+    --danger: #C45C4A;
+    --card: #FFFFFF;
+    --border: rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 24px rgba(0,0,0,0.07);
+    --r: 20px;
+    --r-sm: 14px;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
+  .page { max-width: 480px; margin: 0 auto; padding: 0 20px 40px; }
 
-  .page {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 20px 60px;
-  }
+  /* HERO */
+  .hero { padding: 44px 0 0; }
+  .hero h1 { font-size: 28px; font-weight: 800; line-height: 1.3; color: var(--text); letter-spacing: -0.5px; }
+  .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--pre), var(--pro)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero-sub { margin-top: 12px; font-size: 16px; color: var(--text-soft); }
 
-  /* ===== HERO ===== */
-  .hero {
-    text-align: center;
-    padding: 48px 0 36px;
-  }
+  /* BLOCKS */
+  .block { margin-top: 48px; }
+  .block-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent); margin: 48px 0 0; }
+  .block h2 { font-size: 22px; font-weight: 800; line-height: 1.3; color: var(--text); letter-spacing: -0.3px; margin-bottom: 16px; }
+  .block p { font-size: 17px; color: var(--text-mid); margin-bottom: 14px; line-height: 1.7; }
+  .block p strong { color: var(--text); font-weight: 700; }
 
-  .hero-badge {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding: 6px 16px;
-    border-radius: 100px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
+  .label { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 5px 12px; border-radius: 8px; margin-bottom: 14px; }
+  .label-pro { background: var(--pro-bg); color: var(--pro); }
+  .label-pre { background: var(--pre-bg); color: var(--pre); }
+  .label-neutral { background: rgba(0,0,0,0.04); color: var(--text-soft); }
 
-  .hero h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--text);
-    margin-bottom: 0;
-  }
+  /* BACTERIA */
+  .bacteria-good, .bacteria-bad { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border-radius: var(--r-sm); margin-bottom: 8px; font-size: 16px; line-height: 1.6; }
+  .bacteria-good { background: var(--pre-bg); color: var(--pre); }
+  .bacteria-bad { background: #FDEEED; color: var(--danger); }
+  .bacteria-good .b-icon, .bacteria-bad .b-icon { font-size: 20px; min-width: 24px; margin-top: 1px; }
 
-  .hero h1 span {
-    color: var(--accent);
-  }
+  /* DUO CARDS */
+  .duo-card { border-radius: var(--r); padding: 20px; margin-bottom: 10px; }
+  .duo-card.pro { background: var(--pro-bg); border-left: 4px solid var(--pro); }
+  .duo-card.pre { background: var(--pre-bg); border-left: 4px solid var(--pre); }
+  .duo-card .duo-name { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+  .duo-card.pro .duo-name { color: var(--pro); }
+  .duo-card.pre .duo-name { color: var(--pre); }
+  .duo-card .duo-desc { font-size: 15px; color: var(--text-mid); line-height: 1.6; margin: 0; }
 
-  /* ===== SECTIONS ===== */
-  .section {
-    margin-top: 44px;
-  }
+  /* WARN BOX */
+  .warn-box { display: flex; gap: 12px; padding: 16px; background: var(--warm-bg); border-left: 4px solid var(--warm); border-radius: var(--r-sm); margin-top: 16px; font-size: 15px; color: var(--text-mid); line-height: 1.6; align-items: flex-start; }
+  .warn-box .w-icon { font-size: 20px; min-width: 24px; }
 
-  .section-label {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
+  /* PRODUCT HEADER */
+  .prod-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .prod-header img { width: 76px; height: auto; border-radius: var(--r-sm); box-shadow: var(--shadow-md); }
+  .prod-header-text h2 { margin-bottom: 2px; }
+  .prod-header-text .prod-sub { font-size: 13px; color: var(--text-soft); font-weight: 500; }
 
-  .section h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.4;
-    margin-bottom: 16px;
-    color: var(--text);
-  }
+  /* COMP CARD */
+  .comp-card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); overflow: hidden; }
+  .comp-row { display: flex; gap: 14px; padding: 18px 20px; align-items: flex-start; border-bottom: 1px solid var(--border); }
+  .comp-row:last-child { border-bottom: none; }
+  .comp-emoji { font-size: 22px; min-width: 28px; margin-top: 2px; }
+  .comp-body h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+  .comp-body p { font-size: 15px; color: var(--text-soft); line-height: 1.55; margin: 0; }
 
-  .section p, .section li {
-    font-size: 17px;
-    color: var(--text-soft);
-    margin-bottom: 14px;
-  }
+  /* HIGHLIGHT CARD */
+  .highlight-card { border-radius: var(--r); padding: 20px; margin: 20px 0; }
+  .highlight-card.warm { background: var(--warm-bg); }
+  .highlight-card.green { background: var(--pre-bg); }
+  .highlight-card h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .highlight-card p { font-size: 15px; color: var(--text-mid); line-height: 1.65; margin: 0; }
 
-  .section p strong {
-    color: var(--text);
-    font-weight: 700;
-  }
+  /* CREDS */
+  .creds { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .cred-tag { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 8px; background: rgba(0,0,0,0.04); color: var(--text-soft); }
 
-  /* ===== PRODUCTS PAIR ===== */
-  .products-pair {
-    display: flex;
-    gap: 12px;
-    margin: 24px 0;
-  }
+  /* TIMELINE */
+  .tl { position: relative; padding-left: 24px; }
+  .tl::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(to bottom, var(--pre), var(--pro)); border-radius: 2px; }
+  .tl-item { position: relative; margin-bottom: 28px; }
+  .tl-item:last-child { margin-bottom: 0; }
+  .tl-item::before { content: ''; position: absolute; left: -21px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--pre); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--pre); }
+  .tl-item .tl-when { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: var(--pre); margin-bottom: 4px; }
+  .tl-item .tl-what { font-size: 16px; color: var(--text-mid); line-height: 1.6; margin: 0; }
 
-  .product-card {
-    flex: 1;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    padding: 16px 12px;
-    text-align: center;
-    box-shadow: var(--shadow);
-  }
+  /* PROTOCOL */
+  .proto-card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); overflow: hidden; }
+  .proto-row { display: flex; gap: 14px; padding: 18px 20px; align-items: flex-start; border-bottom: 1px solid var(--border); }
+  .proto-row:last-child { border-bottom: none; }
+  .proto-time { min-width: 68px; text-align: center; padding: 10px 0; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.4; }
+  .proto-time.t-pro { background: var(--pro-bg); color: var(--pro); }
+  .proto-time.t-pre { background: var(--pre-bg); color: var(--pre); }
+  .proto-info h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+  .proto-info p { font-size: 15px; color: var(--text-soft); line-height: 1.5; margin: 0; }
 
-  .product-card img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    margin: 0 auto 12px;
-    display: block;
-    border-radius: 8px;
-  }
+  /* MECHANISM */
+  .mech { margin-bottom: 32px; }
+  .mech-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 10px; background: linear-gradient(135deg, var(--pre), var(--pro)); color: white; font-size: 14px; font-weight: 800; margin-bottom: 10px; }
+  .mech h3 { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+  .mech p { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin-bottom: 12px; }
 
-  .product-card .time-badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 100px;
-    margin-bottom: 8px;
-  }
+  /* CTA */
+  .cta { margin-top: 56px; text-align: center; padding: 40px 24px; background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); }
+  .cta h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .cta p { font-size: 15px; color: var(--text-soft); margin-bottom: 24px; }
+  .cta-btn { display: inline-block; background: linear-gradient(135deg, var(--pre), var(--pro)); color: white; font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; padding: 16px 44px; border-radius: 100px; text-decoration: none; border: none; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 4px 20px rgba(46,109,180,0.25); }
+  .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(46,109,180,0.35); }
+  .cta-btn:active { transform: translateY(0); }
 
-  .product-card.probiotic .time-badge {
-    background: #EBF2FA;
-    color: var(--probiotic);
-  }
+  .footer { text-align: center; padding: 32px 20px 16px; font-size: 12px; color: #B5B0A8; }
 
-  .product-card.prebiotic .time-badge {
-    background: var(--accent-light);
-    color: var(--prebiotic);
-  }
+  /* FADE IN */
+  .fi { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fi.visible { opacity: 1; transform: translateY(0); }
 
-  .product-card .product-name {
-    font-weight: 800;
-    font-size: 14px;
-    color: var(--text);
-    margin-bottom: 4px;
-  }
-
-  .product-card .product-desc {
-    font-size: 12px;
-    color: var(--text-soft);
-    line-height: 1.5;
-  }
-
-  /* ===== INFO CARD ===== */
-  .info-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    padding: 24px 20px;
-    box-shadow: var(--shadow);
-    margin: 20px 0;
-  }
-
-  .info-card.highlight {
-    background: var(--highlight);
-    border-color: #E8DCC8;
-  }
-
-  .info-card.accent {
-    background: var(--accent-light);
-    border-color: #C8DFD0;
-  }
-
-  /* ===== COMPOSITION LIST ===== */
-  .comp-item {
-    display: flex;
-    gap: 12px;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--card-border);
-    align-items: flex-start;
-  }
-
-  .comp-item:last-child { border-bottom: none; }
-
-  .comp-icon {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-top: 2px;
-  }
-
-  .comp-icon.blue { background: #EBF2FA; }
-  .comp-icon.green { background: var(--accent-light); }
-  .comp-icon.amber { background: #FFF3E0; }
-  .comp-icon.purple { background: #F3E8FF; }
-
-  .comp-text .comp-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 2px;
-  }
-
-  .comp-text .comp-desc {
-    font-size: 15px;
-    color: var(--text-soft);
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  /* ===== PRODUCT HEADER ===== */
-  .product-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .product-header img {
-    width: 80px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-  }
-
-  .product-header-text h2 {
-    margin-bottom: 4px;
-  }
-
-  .product-header-text .subtitle {
-    font-size: 13px;
-    color: var(--text-soft);
-    margin: 0;
-  }
-
-  /* ===== TIMELINE ===== */
-  .timeline {
-    position: relative;
-    padding-left: 28px;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    bottom: 8px;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--accent), var(--accent-warm));
-    border-radius: 2px;
-  }
-
-  .timeline-item {
-    position: relative;
-    margin-bottom: 24px;
-  }
-
-  .timeline-item:last-child { margin-bottom: 0; }
-
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -23px;
-    top: 8px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 3px solid var(--bg);
-    box-shadow: 0 0 0 2px var(--accent);
-  }
-
-  .timeline-item .tl-period {
-    font-size: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--accent);
-    margin-bottom: 4px;
-  }
-
-  .timeline-item .tl-text {
-    font-size: 16px;
-    color: var(--text-soft);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  /* ===== PROTOCOL ===== */
-  .protocol-step {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--card-border);
-  }
-
-  .protocol-step:last-child { border-bottom: none; }
-
-  .step-time {
-    min-width: 64px;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-  }
-
-  .step-time.morning {
-    background: #EBF2FA;
-    color: var(--probiotic);
-  }
-
-  .step-time.day {
-    background: var(--accent-light);
-    color: var(--prebiotic);
-  }
-
-  .step-info .step-product {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 2px;
-  }
-
-  .step-info .step-detail {
-    font-size: 15px;
-    color: var(--text-soft);
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  /* ===== TEMP WARNING ===== */
-  .temp-warning {
-    display: flex;
-    gap: 12px;
-    margin-top: 16px;
-    padding: 14px 16px;
-    background: #FFF8EC;
-    border: 1px solid #F0DFB8;
-    border-radius: 12px;
-    font-size: 15px;
-    color: var(--text);
-    line-height: 1.5;
-    align-items: flex-start;
-  }
-
-  .temp-warning .warn-icon {
-    font-size: 20px;
-    min-width: 24px;
-    margin-top: -1px;
-  }
-
-  /* ===== MECHANISM STEPS ===== */
-  .mech-step {
-    margin-bottom: 28px;
-  }
-
-  .mech-step .mech-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: white;
-    font-size: 13px;
-    font-weight: 800;
-    margin-bottom: 8px;
-  }
-
-  .mech-step h3 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .mech-step p {
-    font-size: 16px;
-    color: var(--text-soft);
-    line-height: 1.7;
-    margin-bottom: 10px;
-  }
-
-  /* ===== CTA ===== */
-  .cta-section {
-    margin-top: 52px;
-    text-align: center;
-    padding: 36px 20px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-  }
-
-  .cta-section h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .cta-section p {
-    font-size: 14px;
-    color: var(--text-soft);
-    margin-bottom: 24px;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background: var(--accent);
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 16px 40px;
-    border-radius: 100px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    box-shadow: 0 4px 16px rgba(62,124,95,0.3);
-  }
-
-  .cta-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 24px rgba(62,124,95,0.4);
-  }
-
-  .cta-button:active {
-    transform: translateY(0);
-  }
-
-  /* ===== DIVIDER ===== */
-  .divider {
-    width: 40px;
-    height: 3px;
-    background: var(--accent);
-    border-radius: 2px;
-    margin: 44px 0 0;
-    opacity: 0.3;
-  }
-
-  /* ===== ANIMATIONS ===== */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.6s ease forwards;
-  }
-
-  @keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .delay-1 { animation-delay: 0.1s; }
-  .delay-2 { animation-delay: 0.2s; }
-  .delay-3 { animation-delay: 0.3s; }
-
-  /* ===== RESPONSIVE ===== */
   @media (max-width: 360px) {
-    .hero h1 { font-size: 21px; }
-    .section h2 { font-size: 18px; }
-    .products-pair { gap: 8px; }
-    .product-card { padding: 12px 8px; }
-    .product-card img { max-width: 100px; }
+    .hero h1 { font-size: 24px; }
+    .block h2 { font-size: 20px; }
+    .duo-card { padding: 16px; }
   }
 </style>
 </head>
 <body>
-
 <div class="page">
 
-  <!-- ===== HERO ===== -->
-  <div class="hero fade-in">
-    <div class="hero-badge">Longrich</div>
-    <h1>Два продукта, которые <span>перезапускают кишечник</span> за 5–7&nbsp;дней</h1>
+  <div class="hero fi">
+    <h1>Два продукта, которые <em>перезапускают кишечник</em> за&nbsp;5–7&nbsp;дней</h1>
+    <p class="hero-sub">Состав, схема приёма и&nbsp;как именно это&nbsp;работает</p>
   </div>
 
-  <!-- ===== BLOCK 2: WHY TWO ===== -->
-  <div class="section fade-in delay-1">
+  <div class="block-divider"></div>
+
+  <div class="block fi">
     <h2>Почему два продукта, а&nbsp;не&nbsp;один?</h2>
-
-    <p style="margin-bottom:12px;font-size:17px;color:var(--text);line-height:1.7;">В&nbsp;кишечнике живут <strong>два типа бактерий:</strong></p>
-    <p style="margin:0 0 6px;font-size:16px;color:var(--prebiotic);line-height:1.6;">✅ <strong>Полезные</strong> — помогают переваривать еду и&nbsp;держать вес в&nbsp;норме</p>
-    <p style="margin:0 0 14px;font-size:16px;color:#C0755A;line-height:1.6;">❌ <strong>Вредные</strong> — вызывают вздутие, тягу к&nbsp;сладкому и&nbsp;воспаление</p>
-    <p style="margin:0 0 20px;font-size:17px;color:var(--text);"><strong>Когда вредных больше — начинаются проблемы.</strong></p>
-
-    <p style="font-size:15px;color:var(--text);line-height:1.7;">Чтобы вернуть баланс, нужна связка из&nbsp;двух продуктов:</p>
-
-    <div class="info-card" style="padding:18px 20px;margin:16px 0;">
-      <p style="margin:0 0 6px;font-size:15px;line-height:1.7;"><strong style="color:var(--probiotic);">Пробиотик</strong> <span style="color:var(--text-soft);font-size:14px;">= сами полезные бактерии (60&nbsp;миллиардов в&nbsp;одном пакетике). Они восстанавливают микрофлору, улучшают пищеварение и&nbsp;дают энергию.</span></p>
-    </div>
-
-    <div class="info-card" style="padding:18px 20px;margin:0 0 16px;">
-      <p style="margin:0 0 6px;font-size:15px;line-height:1.7;"><strong style="color:var(--prebiotic);">Пребиотик</strong> <span style="color:var(--text-soft);font-size:14px;">= пища для этих бактерий + белок, кальций и&nbsp;витамины для тебя. Густой тёплый коктейль, который заменяет завтрак.</span></p>
-    </div>
-
-    <div class="temp-warning" style="margin-top:0;">
-      <span class="warn-icon">☝️</span>
-      <span style="font-size:13px;">Полезные бактерии не&nbsp;выживут в&nbsp;кишечнике, если их не&nbsp;кормить. <strong>Пребиотик</strong> даёт им питание и&nbsp;среду для размножения. Только работая в&nbsp;паре, они способны полностью «перезагрузить» кишечник за&nbsp;неделю.</span>
-    </div>
-
+    <p>В&nbsp;кишечнике живут <strong>два типа бактерий:</strong></p>
+    <div class="bacteria-good"><span class="b-icon">✅</span><span><strong>Полезные</strong> — помогают переваривать еду и&nbsp;держать вес в&nbsp;норме</span></div>
+    <div class="bacteria-bad"><span class="b-icon">❌</span><span><strong>Вредные</strong> — вызывают вздутие, тягу к&nbsp;сладкому и&nbsp;воспаление</span></div>
+    <p style="margin-top:16px;"><strong>Когда вредных больше — начинаются проблемы.</strong></p>
+    <p>Чтобы вернуть баланс, нужна связка из&nbsp;двух продуктов:</p>
+    <div class="duo-card pro"><div class="duo-name">Пробиотик</div><p class="duo-desc">= сами полезные бактерии (60&nbsp;миллиардов в&nbsp;одном пакетике). Они восстанавливают микрофлору, улучшают пищеварение и&nbsp;дают энергию.</p></div>
+    <div class="duo-card pre"><div class="duo-name">Пребиотик</div><p class="duo-desc">= пища для этих бактерий + белок, кальций и&nbsp;витамины для тебя. Густой тёплый коктейль, который заменяет перекус.</p></div>
+    <div class="warn-box"><span class="w-icon">☝️</span><span>Полезные бактерии не&nbsp;выживут в&nbsp;кишечнике, если их не&nbsp;кормить. <strong>Пребиотик</strong> даёт им питание и&nbsp;среду для размножения. Только работая в&nbsp;паре, они способны полностью «перезагрузить» кишечник за&nbsp;неделю.</span></div>
   </div>
 
-  <div class="divider"></div>
+  <div class="block-divider"></div>
 
-  <!-- ===== BLOCK 3: PROBIOTIC ===== -->
-  <div class="section fade-in">
-    <div class="section-label">Продукт №1</div>
-
-    <div class="product-header">
-      <img src="probiotic.png" alt="Пробиотик">
-      <div class="product-header-text">
-        <h2>Из чего состоит пробиотик?</h2>
-        <p class="subtitle">Порошок в саше, 2 г × 20 пакетиков</p>
-      </div>
+  <div class="block fi">
+    <span class="label label-pro">Продукт №1</span>
+    <div class="prod-header"><img src="probiotic.png" alt="Пробиотик Longrich"><div class="prod-header-text"><h2 style="margin-bottom:2px;">Из чего состоит пробиотик?</h2><span class="prod-sub">Порошок в саше · 2 г × 20 пакетиков</span></div></div>
+    <div class="comp-card">
+      <div class="comp-row"><span class="comp-emoji">🦠</span><div class="comp-body"><h4>20 видов полезных бактерий</h4><p>В&nbsp;аптечных пробиотиках обычно 1–3 вида, здесь — целых 20. Это как разница между одним врачом и&nbsp;целой больницей</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">💪</span><div class="comp-body"><h4>60 миллиардов живых бактерий</h4><p>Для сравнения: в&nbsp;аптечном Линексе — всего 12&nbsp;миллионов. Разница — в&nbsp;тысячи раз</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🌾</span><div class="comp-body"><h4>8 видов растительной клетчатки</h4><p>Всё включено: бактерии + их питание в&nbsp;одном пакетике</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🍃</span><div class="comp-body"><h4>Экстракты годжи и гриба Пория</h4><p>Поддержка печени и вывод лишней жидкости</p></div></div>
     </div>
-
-    <div class="info-card">
-      <div class="comp-item">
-        <div class="comp-icon blue">🦠</div>
-        <div class="comp-text">
-          <div class="comp-title">20 видов полезных бактерий</div>
-          <p class="comp-desc">В&nbsp;аптечных пробиотиках обычно 1–3 вида, здесь — целых 20. Это как разница между одним врачом и&nbsp;целой больницей</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon green">💪</div>
-        <div class="comp-text">
-          <div class="comp-title">60 миллиардов живых бактерий</div>
-          <p class="comp-desc">Для сравнения: в&nbsp;аптечном Линексе — всего 12&nbsp;миллионов. Разница — в&nbsp;тысячи раз</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon amber">🌾</div>
-        <div class="comp-text">
-          <div class="comp-title">8 видов растительной клетчатки</div>
-          <p class="comp-desc">Всё включено: бактерии + их питание в&nbsp;одном пакетике</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon purple">🍃</div>
-        <div class="comp-text">
-          <div class="comp-title">Экстракты годжи и гриба Пория</div>
-          <p class="comp-desc">Поддержка печени и вывод лишней жидкости</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="info-card highlight">
-      <p style="margin:0;font-size:14px;"><strong>Почему это работает, а&nbsp;обычные пробиотики из&nbsp;аптеки — нет?</strong></p>
-      <p style="font-size:13px;color:var(--text-soft);margin-top:8px;margin-bottom:0;">У&nbsp;обычных пробиотиков нет защиты — кислота желудка убивает 95% бактерий, и&nbsp;до&nbsp;кишечника почти ничего не&nbsp;доходит. Здесь каждая бактерия в&nbsp;пяти защитных оболочках (технология микрокапсулирования). Они раскрываются только в&nbsp;кишечнике — там, где бактерии и&nbsp;должны работать. Бактерии остаются живыми даже без холодильника — можно хранить в&nbsp;сумке, в&nbsp;шкафу, брать в&nbsp;дорогу. У&nbsp;аптечных аналогов большая часть бактерий погибает ещё до&nbsp;того, как ты откроешь упаковку.</p>
-    </div>
-
-    <div class="info-card" style="padding:16px 20px;">
-      <p style="margin:0;font-size:13px;color:var(--text-soft);line-height:1.7;">
-        <strong style="color:var(--text);">Формула 4-в-1:</strong> пробиотик + пребиотик + постбиотик (мгновенный иммунный ответ) + экстракты ТКМ. Это не&nbsp;просто бактерии — это готовая система восстановления.<br><br>
-        <strong style="color:var(--text);">16 патентов</strong> на&nbsp;уникальные штаммы. Сертификаты <strong style="color:var(--text);">SGS, GMP, Халяль</strong>.
-      </p>
-    </div>
-
-    <p style="font-size:13px;color:var(--text-soft);margin-top:16px;">Можно растворить в тёплой воде, молоке, йогурте. Или просто высыпать в рот — приятный на вкус.</p>
+    <div class="highlight-card warm"><h4>Почему это работает, а&nbsp;обычные пробиотики из&nbsp;аптеки — нет?</h4><p>У&nbsp;обычных пробиотиков нет защиты — кислота желудка убивает 95% бактерий, и&nbsp;до&nbsp;кишечника почти ничего не&nbsp;доходит. Здесь каждая бактерия в&nbsp;пяти защитных оболочках (технология микрокапсулирования). Они раскрываются только в&nbsp;кишечнике — там, где бактерии и&nbsp;должны работать. Бактерии остаются живыми даже без холодильника — можно хранить в&nbsp;сумке, в&nbsp;шкафу, брать в&nbsp;дорогу. У&nbsp;аптечных аналогов большая часть бактерий погибает ещё до&nbsp;того, как ты откроешь упаковку.</p></div>
+    <div class="highlight-card green"><p><strong>Формула 4-в-1:</strong> пробиотик + пребиотик + постбиотик (мгновенный иммунный ответ) + экстракты ТКМ. Это не&nbsp;просто бактерии — это готовая система восстановления.</p><div class="creds"><span class="cred-tag">16 патентов</span><span class="cred-tag">SGS</span><span class="cred-tag">GMP</span><span class="cred-tag">Халяль</span></div></div>
+    <p style="font-size:15px;color:var(--text-soft);">Можно растворить в тёплой воде, молоке, йогурте. Или просто высыпать в рот — приятный на вкус.</p>
   </div>
 
-  <div class="divider"></div>
+  <div class="block-divider"></div>
 
-  <!-- ===== BLOCK 4: PREBIOTIC ===== -->
-  <div class="section fade-in">
-    <div class="section-label">Продукт №2</div>
-
-    <div class="product-header">
-      <img src="prebiotic.png" alt="Пребиотик">
-      <div class="product-header-text">
-        <h2>Из чего состоит пребиотик?</h2>
-        <p class="subtitle">Соевый коктейль, 20 г × 10 стиков</p>
-      </div>
-    </div>
-
+  <div class="block fi">
+    <span class="label label-pre">Продукт №2</span>
+    <div class="prod-header"><img src="prebiotic.png" alt="Пребиотик Longrich"><div class="prod-header-text"><h2 style="margin-bottom:2px;">Из чего состоит пребиотик?</h2><span class="prod-sub">Соевый коктейль · 20 г × 10 стиков</span></div></div>
     <p>Густой соевый коктейль из пакетика. Заливаешь горячей водой — получаешь сытный напиток. По ощущениям — как тёплый латте с лёгким ореховым привкусом.</p>
-
-    <div class="info-card">
-      <div class="comp-item">
-        <div class="comp-icon green">🌱</div>
-        <div class="comp-text">
-          <div class="comp-title">Экстракт зародышей сои</div>
-          <p class="comp-desc">Не обычная соя — запатентованный сорт, из&nbsp;которого убрали всё лишнее и оставили максимум пользы. 15 лет разработки</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon blue">🦴</div>
-        <div class="comp-text">
-          <div class="comp-title">Кальций + Витамин D</div>
-          <p class="comp-desc">Тот самый кальций, которого вечно не&nbsp;хватает — но в&nbsp;связке с&nbsp;витамином D, без которого он просто проходит транзитом</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon amber">⚡</div>
-        <div class="comp-text">
-          <div class="comp-title">Витамины группы B + C, A, E</div>
-          <p class="comp-desc">B-витамины — чтобы не&nbsp;клевать носом после обеда и&nbsp;не&nbsp;срываться на&nbsp;близких вечером. А, С, Е — чтобы кожа светилась, а&nbsp;не&nbsp;тускнела</p>
-        </div>
-      </div>
-      <div class="comp-item">
-        <div class="comp-icon purple">🔬</div>
-        <div class="comp-text">
-          <div class="comp-title">Пребиотики + цинк</div>
-          <p class="comp-desc">Цинк — главный минерал для кожи без высыпаний и&nbsp;волос без выпадения. Пребиотики — питание для бактерий из&nbsp;пробиотика</p>
-        </div>
-      </div>
+    <div class="comp-card">
+      <div class="comp-row"><span class="comp-emoji">🌱</span><div class="comp-body"><h4>Экстракт зародышей сои</h4><p>Не обычная соя — запатентованный сорт, из&nbsp;которого убрали всё лишнее и оставили максимум пользы. 15 лет разработки</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🦴</span><div class="comp-body"><h4>Кальций + Витамин D</h4><p>Тот самый кальций, которого вечно не&nbsp;хватает — но в&nbsp;связке с&nbsp;витамином D, без которого он просто проходит транзитом</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">⚡</span><div class="comp-body"><h4>Витамины группы B + C, A, E</h4><p>B-витамины — чтобы не&nbsp;клевать носом после обеда и&nbsp;не&nbsp;срываться на&nbsp;близких вечером. А, С, Е — чтобы кожа светилась, а&nbsp;не&nbsp;тускнела</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🔬</span><div class="comp-body"><h4>Пребиотики + цинк</h4><p>Цинк — главный минерал для кожи без высыпаний и&nbsp;волос без выпадения. Пребиотики — питание для бактерий из&nbsp;пробиотика</p></div></div>
     </div>
-
-    <div class="temp-warning">
-      <span class="warn-icon">☝️</span>
-      <span><strong>Важно:</strong> заливать кипятком (80°C+). Это наоборот от пробиотика — там кипяток убивает бактерии, а тут раскрывает вкус и питательность.</span>
-    </div>
+    <div class="warn-box"><span class="w-icon">☝️</span><span><strong>Важно:</strong> заливать кипятком (80°C+). Это наоборот от пробиотика — там кипяток убивает бактерии, а тут раскрывает вкус и питательность.</span></div>
   </div>
 
-  <div class="divider"></div>
+  <div class="block-divider"></div>
 
-  <!-- ===== BLOCK 5: TIMELINE ===== -->
-  <div class="section fade-in">
-    <div class="section-label">Чего ожидать</div>
+  <div class="block fi">
+    <span class="label label-neutral">Чего ожидать</span>
     <h2>Что ты почувствуешь?</h2>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="tl-period">День 1–3</div>
-        <p class="tl-text">Может быть лёгкое бурление в животе. Это нормально — бактерии начали работу, кишечник «просыпается». Проходит само.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-period">День 3–5</div>
-        <p class="tl-text">Стул нормализуется. Утром встаёшь легче. Живот не раздут.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-period">Неделя 2</div>
-        <p class="tl-text">Тяга к сладкому ослабевает. Когда кишечник работает правильно, он перестаёт «требовать» быстрые углеводы. Меньше вздутия, больше энергии днём.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-period">Месяц</div>
-        <p class="tl-text">Кожа чище, стабильная энергия без провалов, спокойнее отношение к еде.</p>
-      </div>
+    <div class="tl">
+      <div class="tl-item"><div class="tl-when">День 1–3</div><p class="tl-what">Может быть лёгкое бурление в животе. Это нормально — бактерии начали работу, кишечник «просыпается». Проходит само.</p></div>
+      <div class="tl-item"><div class="tl-when">День 3–5</div><p class="tl-what">Стул нормализуется. Утром встаёшь легче. Живот не раздут.</p></div>
+      <div class="tl-item"><div class="tl-when">Неделя 2</div><p class="tl-what">Тяга к сладкому ослабевает. Когда кишечник работает правильно, он перестаёт «требовать» быстрые углеводы. Меньше вздутия, больше энергии днём.</p></div>
+      <div class="tl-item"><div class="tl-when">Месяц</div><p class="tl-what">Кожа чище, стабильная энергия без провалов, спокойнее отношение к еде.</p></div>
     </div>
-
-    <div class="info-card" style="margin-top:20px;">
-      <p style="font-size:13px;color:var(--text-soft);margin:0;">Результат у всех разный. Кто-то чувствует разницу на 2-й день. Кому-то нужно 2 недели. Зависит от того, насколько запущен кишечник.</p>
-    </div>
+    <p style="font-size:14px;color:var(--text-soft);margin-top:20px;">Результат у всех разный. Кто-то чувствует разницу на 2-й день. Кому-то нужно 2 недели. Зависит от того, насколько запущен кишечник.</p>
   </div>
 
-  <div class="divider"></div>
+  <div class="block-divider"></div>
 
-  <!-- ===== BLOCK 6: PROTOCOL ===== -->
-  <div class="section fade-in">
-    <div class="section-label">Схема приёма</div>
+  <div class="block fi">
+    <span class="label label-neutral">Схема приёма</span>
     <h2>Как принимать</h2>
-
-    <div class="info-card">
-      <div class="protocol-step">
-        <div class="step-time morning">Утро<br>натощак</div>
-        <div class="step-info">
-          <div class="step-product">1 пакетик пробиотика</div>
-          <p class="step-detail">Растворить в тёплой воде (до 37°C) или просто высыпать в рот</p>
-        </div>
-      </div>
-      <div class="protocol-step">
-        <div class="step-time day">Завтрак<br>или полдник</div>
-        <div class="step-info">
-          <div class="step-product">1 стик пребиотика</div>
-          <p class="step-detail">Залить горячей водой (80°C+), размешать. Пить как коктейль</p>
-        </div>
-      </div>
+    <div class="proto-card">
+      <div class="proto-row"><div class="proto-time t-pro">Утро<br>натощак</div><div class="proto-info"><h4>1 пакетик пробиотика</h4><p>Растворить в тёплой воде (до 37°C) или просто высыпать в рот</p></div></div>
+      <div class="proto-row"><div class="proto-time t-pre">Завтрак<br>или полдник</div><div class="proto-info"><h4>1 стик пребиотика</h4><p>Залить горячей водой (80°C+), размешать. Пить как коктейль</p></div></div>
     </div>
-
-    <p style="text-align:center;font-size:14px;color:var(--text-soft);margin-top:16px;"><strong>Два пакетика в день. Занимает 2 минуты.</strong></p>
-
-    <div class="temp-warning">
-      <span class="warn-icon">🌡️</span>
-      <span>Единственное правило — не перепутай температуру.<br><strong>Пробиотик = тёплая вода.</strong><br><strong>Пребиотик = горячая вода.</strong></span>
-    </div>
+    <p style="text-align:center;margin-top:16px;"><strong>Два пакетика в день. Занимает 2 минуты.</strong></p>
+    <div class="warn-box"><span class="w-icon">🌡️</span><span>Единственное правило — не перепутай температуру.<br><strong>Пробиотик = тёплая вода.</strong><br><strong>Пребиотик = горячая вода.</strong></span></div>
   </div>
 
-  <div class="divider"></div>
+  <div class="block-divider"></div>
 
-  <!-- ===== BLOCK 7: MECHANISM ===== -->
-  <div class="section fade-in">
-    <div class="section-label">Механизм</div>
-    <h2>Как это помогает похудеть и перестать срываться?</h2>
-
+  <div class="block fi">
+    <span class="label label-neutral">Механизм</span>
+    <h2>Как это помогает похудеть и&nbsp;перестать срываться?</h2>
     <p>Это не жиросжигатель. Здесь нет ничего, что «ускоряет метаболизм» и разгоняет сердце. Механизм другой — через кишечник.</p>
-
-    <div class="mech-step">
-      <div class="mech-num">1</div>
-      <h3>Почему ты срываешься</h3>
-      <p>Когда кишечник работает плохо, в нём живут «неправильные» бактерии — те, которые питаются сахаром и мучным. И они буквально требуют свою еду. Ты чувствуешь это как непреодолимую тягу к сладкому, к хлебу, к булочке после обеда.</p>
-      <p>Это не вопрос силы воли — это физиология. Бактерии в кишечнике буквально посылают сигнал в мозг: «дай сахар». Пока они там — тяга не уйдёт, сколько ни терпи.</p>
-      <p><strong>Пробиотик</strong> меняет состав этих бактерий. Вытесняет «сладкоежек» и заселяет тех, которые питаются клетчаткой. Тяга ослабевает физиологически — не потому что ты терпишь, а потому что организм перестаёт это требовать.</p>
-    </div>
-
-    <div class="mech-step">
-      <div class="mech-num">2</div>
-      <h3>Почему вес стоит, хотя ты мало ешь</h3>
-      <p>Есть такое понятие — «бактерии ожирения». Определённые бактерии в кишечнике умеют извлекать калории буквально из всего и откладывать их в жир. Ты ешь салат — а тело запасает.</p>
-      <p>Штаммы бифидобактерий в <strong>пробиотике</strong> меняют этот профиль. Бактерии начинают «сжигать», а не «запасать».</p>
-    </div>
-
-    <div class="mech-step">
-      <div class="mech-num">3</div>
-      <h3>Почему живот торчит, хотя ты худая</h3>
-      <p>Часто это не жир, а раздутый газами кишечник + отёки. При стрессе пищеварение отключается, еда гниёт, образуются газы — живот надувается как шарик.</p>
-      <p><strong>Пробиотик</strong> подавляет гнилостные бактерии — газы уходят, живот физически «сдувается». А экстракт гриба Пория в составе выводит лишнюю воду — те самые отёки, которые ты путаешь с жиром.</p>
-    </div>
-
-    <div class="mech-step">
-      <div class="mech-num">4</div>
-      <h3>Почему после обеда хочется спать и есть сладкое</h3>
-      <p>Это сахарные качели. Съела быстрые углеводы → сахар в крови взлетел → инсулин его резко опустил → упадок сил → хочется ещё сладкого. Замкнутый круг.</p>
-      <p><strong>Пребиотик</strong> ломает этот цикл. У него низкий гликемический индекс — сахар поднимается плавно и так же плавно снижается. Нет скачка — нет провала — нет тяги. Плюс белок и клетчатка дают сытость на 3 часа.</p>
-    </div>
-
-    <div class="info-card accent">
-      <p style="margin:0;font-size:14px;"><strong>Что получается в итоге</strong></p>
-      <p style="font-size:13px;color:var(--text-soft);margin-top:8px;margin-bottom:0;">Пробиотик убирает причину — неправильные бактерии, газы, воспаление. Пребиотик перестраивает питание — ровная энергия, нет скачков сахара, долгая сытость. Вместе они не «сжигают жир» — они убирают причины, по которым тело его накапливает. Вес начинает уходить сам, потому что ты перестаёшь переедать и тело перестаёт запасать.</p>
-    </div>
+    <div class="mech"><div class="mech-badge">1</div><h3>Почему ты срываешься</h3><p>Когда кишечник работает плохо, в нём живут «неправильные» бактерии — те, которые питаются сахаром и мучным. И они буквально требуют свою еду. Ты чувствуешь это как непреодолимую тягу к сладкому, к хлебу, к булочке после обеда.</p><p>Это не вопрос силы воли — это физиология. Бактерии в кишечнике буквально посылают сигнал в мозг: «дай сахар». Пока они там — тяга не уйдёт, сколько ни терпи.</p><p><strong>Пробиотик</strong> меняет состав этих бактерий. Вытесняет «сладкоежек» и заселяет тех, которые питаются клетчаткой. Тяга ослабевает физиологически — не потому что ты терпишь, а потому что организм перестаёт это требовать.</p></div>
+    <div class="mech"><div class="mech-badge">2</div><h3>Почему вес стоит, хотя ты мало ешь</h3><p>Есть такое понятие — «бактерии ожирения». Определённые бактерии в кишечнике умеют извлекать калории буквально из всего и откладывать их в жир. Ты ешь салат — а тело запасает.</p><p>Штаммы бифидобактерий в <strong>пробиотике</strong> меняют этот профиль. Бактерии начинают «сжигать», а не «запасать».</p></div>
+    <div class="mech"><div class="mech-badge">3</div><h3>Почему живот торчит, хотя ты худая</h3><p>Часто это не жир, а раздутый газами кишечник + отёки. При стрессе пищеварение отключается, еда гниёт, образуются газы — живот надувается как шарик.</p><p><strong>Пробиотик</strong> подавляет гнилостные бактерии — газы уходят, живот физически «сдувается». А экстракт гриба Пория в составе выводит лишнюю воду — те самые отёки, которые ты путаешь с жиром.</p></div>
+    <div class="mech"><div class="mech-badge">4</div><h3>Почему после обеда хочется спать и есть сладкое</h3><p>Это сахарные качели. Съела быстрые углеводы → сахар в крови взлетел → инсулин его резко опустил → упадок сил → хочется ещё сладкого. Замкнутый круг.</p><p><strong>Пребиотик</strong> ломает этот цикл. У него низкий гликемический индекс — сахар поднимается плавно и так же плавно снижается. Нет скачка — нет провала — нет тяги. Плюс белок и клетчатка дают сытость на 3 часа.</p></div>
+    <div class="highlight-card green"><h4>Что получается в итоге</h4><p>Пробиотик убирает причину — неправильные бактерии, газы, воспаление. Пребиотик перестраивает питание — ровная энергия, нет скачков сахара, долгая сытость. Вместе они не «сжигают жир» — они убирают причины, по которым тело его накапливает. Вес начинает уходить сам, потому что ты перестаёшь переедать и тело перестаёт запасать.</p></div>
   </div>
 
-  <!-- ===== CTA ===== -->
-  <div class="cta-section fade-in">
+  <div class="cta fi">
     <h2>Хочешь попробовать?</h2>
-    <p>Напиши тому, кто скинул тебе эту ссылку — расскажет, как заказать и с чего начать</p>
-    <a href="#" class="cta-button" onclick="alert('Вернись в чат и напиши тому, кто отправил тебе эту ссылку ✌️'); return false;">Написать</a>
+    <p>Напиши тому, кто скинул тебе эту ссылку — расскажет, как заказать и&nbsp;с&nbsp;чего начать</p>
+    <a href="#" class="cta-btn" onclick="alert('Вернись в чат и напиши тому, кто отправил тебе эту ссылку ✌️'); return false;">Написать</a>
   </div>
 
 </div>
 
-<script>
-// Intersection Observer for fade-in on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.animationPlayState = 'running';
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.section, .cta-section').forEach(el => {
-  el.classList.add('fade-in');
-  el.style.animationPlayState = 'paused';
-  observer.observe(el);
-});
-</script>
-
-<div style="text-align:center;padding:32px 20px 16px;font-size:12px;color:#B5B0A8;">© 2026 Longrich. Информационная страница продукта</div>
+<div class="footer">© 2026 Longrich. Информационная страница продукта</div>
 
 <script>
-// Copy protection
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fi').forEach(el => obs.observe(el));
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('selectstart', e => e.preventDefault());
 document.addEventListener('copy', e => e.preventDefault());
 document.addEventListener('cut', e => e.preventDefault());
-document.addEventListener('keydown', e => {
-  if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) {
-    e.preventDefault();
-  }
-});
+document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) { e.preventDefault(); } });
 </script>
-
 </body>
 </html>
