@@ -772,5 +772,20 @@ document.querySelectorAll('.section, .cta-section').forEach(el => {
 });
 </script>
 
+<div style="text-align:center;padding:32px 20px 16px;font-size:12px;color:#B5B0A8;">© 2026 Longrich. Информационная страница продукта</div>
+
+<script>
+// Copy protection
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) {
+    e.preventDefault();
+  }
+});
+</script>
+
 </body>
 </html>
